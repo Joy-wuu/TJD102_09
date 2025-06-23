@@ -1,0 +1,7 @@
+@import url("header_airplan_footer.css");
+/*主視覺圖*/
+.teacherTop{
+    background-image: url(../img/home/teacher_header.png);
+    background-size: cover;
+    
+}

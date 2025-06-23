@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>師資陣容與教學理念｜浩奇補習班浩奇教育</title>
+    <link rel="stylesheet" href="css/teacher.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+   
+    <header>
+        
+        <div class="top teacherTop">
+            <!--LOGO及選單列-->
+            <div class="tool">
+                <a href="home.html"><img src="img/home/logo_header.svg" alt=""></a>
+                <ul>
+                    <li>
+                        <a href="about.html">關於我們</a>
+                    </li>
+
+                    <li>
+                        <a href="lesson.html">專業課程</a>
+                    </li>
+
+                    <li>
+                        <a href="teacher.html">師資陣容</a>
+                    </li>
+
+                    <li>
+                        <a href="news.html">最新消息</a>
+                    </li> 
+
+                    <li>
+                        <a href="qa.html">常見問題</a>
+                    </li>
+                 </ul>
+            </div>
+        </div>
+    </header>
+
+<!-----------中間---------------->   
+     <main >
+        <!----點我預約試聽---->
+        <section>
+            <a href="#" class="airplan">
+            
+                <img src="img/home/airplan.png" alt="點我預約試聽" >
+            </a>
+        </section>
+
+         <!----大標---->
+        <section>
+            <h1>老師介紹卡</h1>
+        </section>
+
+        
+        <section>
+            <!----整張老師卡背景---->
+            <div class="cardBackgrond">
+                <ul class="lessonBtn">
+                    <li>
+                        <button data-group="orange" onclick="showTeacher('chinese')">國文/作文</button>
+                    </li>
+
+                    <li>
+                        <button data-group="green" onclick="showTeacher('math')">數學</button>
+                    </li>
+
+                    <li>
+                        <button data-group="blue" onclick="showTeacher('english')">英文</button>
+                    </li>
+
+                    <li>
+                        <button data-group="orange" onclick="showTeacher('geo')">地理</button>
+                    </li>
+
+                    <li>
+                        <button data-group="orange" onclick="showTeacher('history')">歷史</button>
+                    </li>
+
+                    <li>
+                        <button data-group="yellow" onclick="showTeacher('bio')">生物</button>
+                    </li>
+
+                    <li>
+                        <button data-group="green" onclick="showTeacher('physics')">物理</button>
+                    </li>
+                    
+                    <li>
+                       <button data-group="blue" onclick="showTeacher('chem')">化學</button>
+                    </li>
+
+                    <li>
+                        <button data-group="yellow" onclick="showTeacher('after')">課後輔導</button>
+                    </li>
+
+
+                </ul>
+
+                <div class="cardTop"><!--上方老師姓名及照片-->
+                    <h2 id="tName"></h2>
+                    <img id="tPhoto"src="img/home/teacherChinese.png" alt="老師照片">
+                    <p id="tMotto"></p>
+                    <h1 id="tEng"></h1>
+                    
+                </div><!--上方老師姓名及照片 結束-->
+
+                <div class="cardBottom"><!--下方經歷介紹及影片-->
+                    <div class="cardContent"><!--經歷介紹-->
+                        <ul class="teacherLeft">
+                            <li>
+                                <p>•畢業學校：</p>
+                                <p id="tSchool"></p>
+                            </li>
+                            <li>
+                                <p>•教學年資：</p>
+                                <p id="tExp">10年</p>
+                            </li>
+
+                            <li>
+                                <p>•任教經歷：</p>
+                                <p id="tCareer"></p>
+                            </li>
+
+                            <li>
+                                <p>•學生好評關鍵字：</p>
+                                <p id="tKey"></p>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="yt">
+                  
+                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/COGXH8sZZ2k?si=m18W0H6ZtVdjve1f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                        <video controls >
+                             <source src="video/chinese.mp4" type="video/mp4">
+
+                        </video>
+                   
+                    </div>
+
+
+
+                </div><!--下方經歷介紹及影片 結束-->
+
+
+
+
+            </div><!--整張老師卡背景 結束--->
+        </section>
+     </main>
+
+
+     <!----------------頁尾----------------->
+     <footer>
+        <div class="bottom">
+
+            <div class="footerLogo">
+                <img src="img/home/footer_logo.svg" alt="">
+            </div>
+
+
+            <ul class="introduce">
+                <li>
+                    <a href="#">
+                        <img src="img/home/icons_facebook.svg" alt="">
+                        <p>浩奇教育補習班</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/home/icons_line.svg" alt="">
+                        <p>浩奇教育補習班</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="img/home/icons_phone.svg" alt="">
+                    <p>02-8965-9525</p>
+                </li>
+                <li>
+                    <img src="img/home/icons_time.svg" alt="">
+                    <p>13:00 ~ 22:30</p>
+                </li>
+                <li>
+                    <img src="img/home/icons_email.svg" alt="">
+                    <p>joy851127@gmail.com</p>
+                </li>
+                <li>
+                    <img src="img/home/icons_adress.svg" alt="">
+                    <p>台北市中山區南京東路三段219號4樓</p>
+                </li>
+            </ul>
+
+
+
+            <ul class="footerLesson">
+                <li>
+                    <a href="#">
+                        <p>關於國小生</p>
+                        <img src="img/home/btn_lesson.svg" alt="">
+                        
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <p>關於國中生</p>
+                        <img src="img/home/btn_lesson.svg" alt="">
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <p>關於高中生</p>
+                        <img src="img/home/btn_lesson.svg" alt="">
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+     </footer>
+
+
+
+
+
+
+
+<!-----------js練習----------------->
+
+  <script>
+    const teachers = {
+      chinese: {
+        name: "蘇宥安主任", 
+        nameColor: "#FFFFFF",
+        photo: "img/home/teacherChinese.png", 
+        motto: "文字可溫柔可鋒利，<br>　我願教會你兩者都用得恰到好處。",
+        mottoColor: "#FFFFFF",
+        eng: "CHINESE", 
+        bgColor: "#D26E49", 
+        engColor: "rgb(255, 183, 147, 0.6)",
+        school: "國立臺灣師範大 國文系碩士", 
+        exp: "10年",
+        career: "曾任多所知名升學補習班國文講師<br>長期擔任國中會考與高中學測國文專業輔導",
+        keywords: "＃親切風趣　＃作文進步看得見", 
+        video: "video/chinese.mp4"
+      },
+
+
+      english: {
+        name: "黃子涵老師", 
+        nameColor: "#FFFFFF",
+        photo: "./img/home/teacherEnglish.png", 
+        motto: "Every word you learn <br>　　is a tiny star in your sky. ",
+        mottoColor: "#FFFFFF",
+        eng: "ENGLISH", 
+        bgColor: "#257EC7", 
+        engColor: "rgba(121, 233, 216, 0.7)",
+        school: "國立政治大學 英文系", 
+        exp: "6年",
+        career: "TOEFL 指導<br>國高中聽說讀寫教學經驗",
+        keywords: "＃互動教學　＃學生不怕開口說英文", 
+        video: "video/chinese.mp4"
+      },
+      math: {
+        name: "林婷憶老師", 
+        nameColor: "#FFFFFF",
+        photo: "img/home/teacherMath.png", 
+        motto: "數學教我精準計，　　　<br>　人生教我溫柔算心。　　　", 
+        mottoColor: "#FFFFFF",
+        eng: "MA　TH", 
+        bgColor: "#17AA6C", 
+        engColor: "rgba(162, 56, 232, 0.5)",
+        school: "臺灣大學 數學系",
+        exp: "8年",
+        career: "曾任台北市立某知名國中數學科主任<br>台中知名補習班主講老師",
+        keywords: "＃條理清楚　＃猜題精準", 
+        video: "video/chinese.mp4"
+      },
+
+
+      geo: {
+        name: "林繼誠老師", 
+        nameColor: "#FFFFFF",
+        photo: "img/home/teacherGeography.png", 
+        motto: "用好奇心丈量世界，<br>　　用心感受每一塊土地的脈動。",
+        mottoColor: "#FFFFFF",
+        eng: "GEOGPHY", 
+        bgColor: "#D26E49", 
+        engColor: "rgb(255, 183, 147, 0.6)",
+        school: "國立臺灣師範大 地理系", 
+        exp: "9年",
+        career: "曾任職於重點高中與地理輔導班<br>現任現任浩奇補習班物理老師。",
+        keywords: "＃互動式上課很有趣　＃鼓勵學生發問 ", 
+        video: "video/chinese.mp4"
+      },
+
+
+      history: {
+        name: "陳思穎老師", 
+        nameColor: "#FFFFFF",
+        photo: "img/home/teacherHistory.png", 
+        motto: "歷史會說話，　　<br>　只要你願意傾聽它的聲音。　　",
+        mottoColor: "#FFFFFF",
+        eng: "HISTORY",  
+        bgColor: "#D26E49", 
+        engColor: "rgb(255, 183, 147, 0.6)",
+        school: "國立政治大學 歷史系", 
+        exp: "12年",
+        career: "補教界歷史總複習主講<br>國中會考歷史命題委員",
+        keywords: "＃邏輯清楚　＃故事超吸引人", 
+        video: "video/chinese.mp4"
+      },
+
+
+      bio: {
+        name: "鄭可馨老師",
+        nameColor: "#343333",
+        photo: "img/home/teacherBio.png", 
+        motto: "用好奇心打開生命之門，<br>　　是生物課的起點。",
+        mottoColor: "#343333",
+        eng: "BIOLOGY", 
+        bgColor: "#FFD954", 
+        engColor: "rgba(233, 121, 222, 0.5)",
+        school: "陽明交通大學 生命科學系", 
+        exp: "7年",
+        career: "曾任國中自然綜合教學講師<br>曾任生物科科展與科學營講師<br>現任現任浩奇補習班生物老師",
+        keywords: "＃圖表清晰　＃生動活潑", 
+        
+        
+
+      },
+
+
+
+      physics: {
+        name: "劉芊芊老師", 
+        nameColor: "#FFFFFF",
+        photo: "img/home/teacherPhysics.png", 
+        motto: "好奇－是萬有引力之外，　　　<br>　　讓你飛得更遠的力量。　　　 ",
+        mottoColor: "#FFFFFF",
+        eng: "PHYSICS",  
+        bgColor: "#17AA6C", 
+        engColor: "rgba(162, 56, 232, 0.5)",
+        school: "國立清華大學 物理系", 
+        exp: "10年", 
+        career: "曾任職於台北市知名升學補習班<br>曾任國高中理科培訓中心",
+        keywords: "＃公式變簡單　＃物理不再怕", 
+        video: "video/chinese.mp4"
+
+      },
+
+
+
+      chem: {
+        name: "藍皓昀老師", 
+        nameColor: "#FFFFFF",
+        photo: "img/home/teacherChemistry.png", 
+        motto: "　知識+溫度=理解反應，<br>　　溫柔教學，讓化學不再只是公式與計算。",
+        mottoColor: "#FFFFFF",
+        eng: "CHESTRY", 
+        bgColor: "#257EC7", 
+        engColor: "rgba(121, 233, 216, 0.7)",
+        school: "國立中山大學 化學系", 
+        exp: "9年",
+        career: "曾任公立高中化學教師<br>曾任化學模擬考命題與解析團隊成員",
+        keywords: "＃實驗教學　＃上課不想睡", 
+        video: "video/chinese.mp4"
+
+      },
+      after: {
+        name: "林芷芸老師", 
+        nameColor: "#343333",
+        photo: "img/home/teacherAfter.png", 
+        motto: "學習就像搭積木，<br>　我會陪你一塊塊蓋出夢想小屋。", 
+        mottoColor: "#343333",
+        eng: "AFTESC-", 
+        bgColor: "#FFD954", 
+        engColor: "rgba(233, 121, 222, 0.5)",
+        school: "國立臺北教育大學 教育系", 
+        exp: "6年",
+        career: "曾任私立國小安親班班導師<br>現任浩奇補習班課後輔導師組長",
+        keywords: "＃細心耐心　＃溫柔引導", 
+        video: "video/chinese.mp4"
+
+      }
+    };
+
+
+    function showTeacher(key) {
+      const t = teachers[key];
+      document.getElementById("tName").textContent = t.name;
+      document.getElementById("tName").style.color = t.nameColor;
+      document.getElementById("tPhoto").src = t.photo;
+      document.getElementById("tMotto").innerHTML = t.motto;
+      document.getElementById("tMotto").style.color = t.mottoColor;
+      document.getElementById("tEng").textContent = t.eng;
+      document.getElementById("tEng").style.color = t.engColor;
+      document.querySelector(".cardBackgrond").style.backgroundColor = t.bgColor;
+      document.getElementById("tSchool").textContent = t.school;
+      document.getElementById("tExp").textContent = t.exp;
+      document.getElementById("tCareer").innerHTML = t.career;
+      document.getElementById("tKey").textContent = t.keywords;
+      document.getElementById("tVideo").querySelector("source").src = t.video;
+      document.getElementById("tVideo").load();
+
+
+      
+    }
+
+    window.onload = function() {
+      showTeacher('chinese');
+    };
+  </script>
+
+
+
+    
+</body>
+</html>

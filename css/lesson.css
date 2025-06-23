@@ -1,0 +1,254 @@
+@import url("header_airplan_footer.css");
+
+
+
+/*主視覺圖*/
+.teacherTop{
+    background-image: url(../img/home/teacher_header.png);
+    background-size: cover;
+    
+
+}
+
+
+
+
+
+/*中間*/
+main{
+    width: auto;
+    margin-top: 48px;
+    background-image: url(../img/home/background_subject.png);
+    /* background-position:center; */
+    background-size: cover;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+
+  
+}
+
+
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+section>h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    padding: 30px 0;
+
+}
+
+section{
+    /* outline: 2px rgb(222, 61, 25) solid; */
+    color:#343333;
+
+    width: 1200px;
+    margin: 0 auto;
+
+    display:flex;
+    flex-direction: column;
+    gap: 76px;
+    margin-bottom: 48px;
+
+}
+
+
+
+/*課程圖片*/
+.sub{   
+    /* outline: #000000 1px solid; */
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    gap:56px;
+
+
+}
+
+.lessonCard{
+    width: 450px;
+    height: 330px;
+    border-radius: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+
+    background-color:#FFD954;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+        
+}
+
+
+.juniorCard{
+    background-color:#17AA6C;
+    color: white;
+
+}
+
+
+.highCard{
+    background-color: #257EC7;
+    color: white;
+
+
+}
+
+
+.tittleRow{
+    display: flex;
+    gap: 16px;
+    /* outline: 10px green solid; */
+    justify-content: center;
+    align-items: center;
+
+
+    
+
+}
+
+.tittleRow img{
+    display: block;
+
+}
+
+.tittleRow img:hover {
+  animation: wiggle 1s ;
+}
+
+@keyframes wiggle {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(15deg); }
+  50%  { transform: rotate(-15deg); }
+  75%  { transform: rotate(6deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
+
+
+
+.lessonCard h3{
+    font-size: 28px;
+    line-height: 24px;
+    height: 24px;
+
+}
+
+
+.lessonCard p{
+    width: 300px;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    /* outline: white 1px solid; */
+    align-self: center;
+}
+
+
+
+.juniorCard{
+    order: 1;/*國中課程卡片與清單左右對調*/
+}
+
+
+
+
+/*課程選單*/
+
+
+
+.lessonList{
+    display: flex;
+    align-items: center;
+    /* outline:  5px blue solid; */
+    width: 450px;
+}
+
+
+
+.lessonList ul{
+    /* outline: yellow 1px solid; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    align-content: space-between;
+
+    height: 80%;
+
+
+}
+
+
+
+.lessonList ul li{
+    /* outline: purple 1px solid; */
+    flex: 0 0 48%;
+
+}
+
+
+.lessonList ul li.full-row{
+    flex: 0 0 100%;
+
+}
+
+
+
+
+
+.lessonList ul li a{
+    display: block;
+    padding: 15px 40px;
+    margin: 0 auto;
+
+
+    font-size: 18px;
+    font-weight: bold;
+
+
+    color:#343333;
+    text-decoration: none;
+    text-align: center;
+
+
+    background-color: #FFE9CA;
+    border-radius: 20px;
+    width:90px;
+
+}
+
+
+.lessonList ul li a:hover{
+    background-color: rgba(255, 250, 240, 0.7);
+
+
+}
+
+
+
+.juniorList{
+    order: 0;
+
+}
+
+
+
+   

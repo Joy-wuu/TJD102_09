@@ -1,0 +1,357 @@
+@import url("reset.css");
+
+body{
+    background-color: #FFF4E3;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    color:#343333;
+    
+
+}
+
+/*-----LOGO及工作列----*/
+header{
+    /* border: 3px black solid; */
+    background-image: url(../img/home/main_header.png);
+    background-size: cover;
+}
+
+.tool{
+    /* border: blue 3px solid; */
+    padding: 0 130px ;
+    margin-top: 26px;
+    overflow: hidden;
+    width: 100%;
+
+    position:fixed;
+    z-index: 99;
+
+    
+}
+
+
+.top{
+    /* background-image: url(../img/home/main_header.png); */
+    height: 563px;
+    background-size: cover;
+    
+    overflow: hidden;
+}
+
+.top img{
+    float: left; 
+    display: block;
+}
+
+
+
+.top ul{
+    /* outline: 3px red solid; */
+    padding-right: 130px;
+
+    float: right;
+    background-color: #FFE9CA;
+    box-shadow: 20px 20px 30px rgba(242, 157, 111, 0.4);
+    height: 60px; 
+    width: 60%;
+
+    display: flex;
+
+    border-radius: 30px 0 0 30px;
+    border-left: 3px solid #F29D6F;
+    border-bottom: 5px solid #F29D6F;
+
+}
+
+
+
+.top li{
+
+    /* outline: 3px green solid; */
+    flex-basis: 0;
+    flex-grow: 1;
+
+
+}
+
+
+.top li a{
+    text-decoration: none;
+    text-align:center ;
+    display: block;
+    line-height: 60px;
+    height: 60px;
+    font-size: 18px;
+    color:rgb(52, 51, 51);
+    font-weight: bold;
+
+
+}
+
+
+.top li:hover a{
+    background-color: rgba(255, 250, 240, 0.7);
+    border-radius: 30px;
+
+    
+}
+
+/*------預約試聽---------*/
+main{
+    
+
+
+}
+
+
+
+a.airplan{
+    /* outline: 2px rgb(34, 0, 255) solid; */
+
+
+    text-decoration: none;
+    color:rgb(52, 51, 51);
+    font-weight: bold;
+    font-size: 16px;
+
+    
+    position: fixed;
+    right: 30px;
+    top: 50%;
+
+    z-index: 98;
+
+    transform: translateY(-50%);
+}
+
+
+
+
+a.airplan img{
+    /* outline: 2px red solid; */
+   
+
+    width: 100%;
+    height: auto;
+    max-width: 50vw;
+    transition: transform 0.5s;
+    
+
+}
+
+.airplan img:hover {
+    transform: rotate(-20deg);
+
+}
+
+
+/*---------頁尾---------*/
+
+
+footer{
+    /* border: 1px solid red; */
+    height: auto;
+    width: 100%;
+    background-color: #FFE9CA;
+    border-radius: 150px 150px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    
+
+
+}
+
+
+.bottom{
+    /* outline: 1px red solid; */
+
+    width: 1200px;
+    height: 364px;
+    
+
+    display: flex;
+    align-items: center;
+
+    padding: 50px;
+    
+
+}
+
+.footerLogo{/*包住logo的div*/
+    flex-grow: 1;
+    justify-content: center;
+
+    flex-basis:0 ;
+
+
+    /* outline: 2px solid blue; */
+
+
+
+}
+
+.footerLogo img{
+    display: block;
+    /* margin: 0 auto; */
+
+}
+
+
+
+/*--------中間icons的ul---------*/
+ul.introduce{
+    flex-grow: 1;
+
+
+    height: 364px;
+
+    flex-basis:0 ;
+
+ 
+
+    /* outline: 2px solid rgb(0, 255, 102); */
+
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+
+
+
+ul.introduce li{
+    display: flex;
+    align-items: center;
+
+    
+    
+    /* outline: 2px yellow solid; */
+    flex-grow: 1;
+    
+
+
+
+}
+
+
+ul.introduce li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:#343333;
+
+    
+
+}
+
+ul.introduce li img{
+    /* outline: 2px rgb(230, 0, 255) solid; */
+    width: 24px;
+    height: 24px;
+    
+
+
+
+}
+
+
+ul.introduce li p{
+    /* outline: 2px red solid; */
+    margin-left: 8px;
+    font-size: 16px;
+
+
+  
+}
+
+
+
+/*----------右邊課程的ul--------*/
+ul.footerLesson{
+    /* outline: 2px solid blue; */
+
+    flex-basis:0 ;
+    flex-grow: 1;
+    align-items: center;
+    justify-items: center;
+
+    height: 364px;
+
+    display: flex;/*讓li等高*/
+    
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+ul.footerLesson li{
+    background-image: url(../img/home/footer_elementary.png);
+    background-repeat: no-repeat;
+    width: 322px;
+    height: 101px;
+
+    /* outline: 2px red solid; */
+    justify-content: flex-end;
+
+    display: flex;
+
+
+}
+
+ul.footerLesson li:nth-child(2){
+    background-image: url(../img/home/footer_junior.png);
+
+}
+
+ul.footerLesson li:last-child{
+    background-image: url(../img/home/footer_high.png);
+
+}
+
+
+ul.footerLesson li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 66%;
+    gap:28px;
+    
+
+
+
+    /* outline: 2px solid orange; */
+
+}
+
+ul.footerLesson li a p{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    /* outline: 2px solid blue; */
+    align-items: center;
+
+    
+
+}
+
+ul.footerLesson li:first-child a p{
+    color:rgb(52, 51, 51);
+}
+
+
+ul.footerLesson li img{
+    width: 24px;
+    height: 24px;
+    /* outline: 2px solid rgb(255, 0, 0); */
+    display: block;
+    
+
+
+
+}
