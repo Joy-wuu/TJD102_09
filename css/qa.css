@@ -14,11 +14,33 @@ section>h3{
   font-size: 36px;
   text-align: center;
   font-weight: bold;
-  margin: 96px auto 56px;
+  margin: 0px auto 56px;
+  padding-top: 96px;
 }
 
-section:nth-child(3){
+
+main{
+
+}
+
+.wrapper{
   /* outline: 2px black solid; */
+
+  background-image: url(../img/home/background_qa.png);
+  width: 1440px;
+  min-height: 1500px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 1910px;
+  
+
+}
+
+
+section:nth-child(3){
+  /* outline: 2px rgb(85, 15, 15) solid; */
+
   display: flex;
   flex-direction: column;
   gap: 48px;
