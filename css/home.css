@@ -141,6 +141,7 @@ a.airplan img{
 
 .homeTop{
     background-image: url(../img/home/home_header.png);
+    background-position:bottom center;
 }
  /*----標語、專業課程---*/
 

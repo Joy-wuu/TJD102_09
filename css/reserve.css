@@ -1,0 +1,145 @@
+@import url("header_airplan_footer.css");
+
+/*主視覺圖*/
+.teacherTop{
+    background-image: url(../img/home/teacher_header.png);
+    background-size: cover;
+    background-position:bottom center;
+}
+
+main{
+    background-image: url("../img/home/background_reserve.png");
+    background-repeat: no-repeat;
+    width: 1440px;
+    margin: 96px auto;
+
+    position: relative;
+
+}
+
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align:center;
+    margin: 56px auto;
+}
+
+.airplan{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    animation: fly 7s ease-in-out infinite;
+    z-index: 1;
+
+}
+
+
+@keyframes fly {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+    50% {
+        transform: translate(-200px, -50px) rotate(6deg) scale(1.2);
+    }
+
+    75%{
+        transform: translate(-100px, 20px) rotate(-3deg) scale(0.9);
+    }
+
+    100%{
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+
+}
+
+
+
+
+.bookingForm {
+    /* width: 70%; */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 36px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    margin-bottom: 56px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  
+}
+
+.bookingForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+ 
+}
+
+.bookingForm label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+.bookingForm input,
+.bookingForm textarea,
+.bookingForm select{
+    font-size: 18px;
+  
+}
+
+
+
+.bookingForm input[type="text"],
+.bookingForm input[type="tel"],
+.bookingForm input[type="email"],
+.bookingForm select,
+.bookingForm textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+.bookingForm li{
+    margin: 20px 0;
+}
+
+.relation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 4px;
+  
+}
+
+.bookingForm textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.bookingForm button {
+  width: 20%;
+  padding: 10px;
+  background-color: #257EC7;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  
+  cursor: pointer;
+  margin: 20px auto 0;
+  display: block;
+  border: 2px solid transparent;;
+
+}
+
+.bookingForm button:hover{
+    color:#257EC7;
+    background-color: white;
+    border: 2px solid #257EC7;;
+}
+
+

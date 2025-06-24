@@ -2,7 +2,8 @@
 /*主視覺圖*/
 .teacherTop{
     background-image: url(../img/home/teacher_header.png);
-    background-size: cover;   
+    background-size: cover;  
+    background-position:bottom center; 
 }
 
 main{

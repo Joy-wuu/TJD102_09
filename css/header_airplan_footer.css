@@ -13,6 +13,7 @@ header{
     /* border: 3px black solid; */
     background-image: url(../img/home/main_header.png);
     background-size: cover;
+    background-position:bottom center;
 }
 
 .tool{
