@@ -18,7 +18,7 @@ main{
 }
 
 
-h1{
+h3{
     font-size: 36px;
     font-weight: bold;
     text-align:center;
@@ -68,11 +68,7 @@ h1{
   
 }
 
-.bookingForm h2 {
-    text-align: center;
-    margin-bottom: 20px;
- 
-}
+
 
 .bookingForm label {
     display: block;
