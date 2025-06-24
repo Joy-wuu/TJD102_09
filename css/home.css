@@ -142,6 +142,8 @@ a.airplan img{
 .homeTop{
     background-image: url(../img/home/home_header.png);
     background-position:bottom center;
+    min-height: 563px;
+
 }
  /*----標語、專業課程---*/
 

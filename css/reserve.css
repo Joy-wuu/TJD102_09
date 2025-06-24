@@ -5,6 +5,8 @@
     background-image: url(../img/home/teacher_header.png);
     background-size: cover;
     background-position:bottom center;
+    min-height: 563px;
+
 }
 
 main{
@@ -18,8 +20,8 @@ main{
 }
 
 
-h3{
-    font-size: 36px;
+h1{
+    font-size: 30px;
     font-weight: bold;
     text-align:center;
     margin: 56px auto;
@@ -74,12 +76,13 @@ h3{
     display: block;
     margin: 12px 0 6px;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .bookingForm input,
 .bookingForm textarea,
 .bookingForm select{
-    font-size: 18px;
+    font-size: 16px;
   
 }
 
@@ -95,6 +98,7 @@ h3{
     border-radius: 6px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 
