@@ -2,6 +2,365 @@
 /*主視覺圖*/
 .teacherTop{
     background-image: url(../img/home/teacher_header.png);
-    background-size: cover;
+    background-size: cover;   
+}
+
+main{
+    margin-top: 48px;
+    background-image: url(../img/home/background_about.png);
+    /* background-position:center; */
+    background-repeat: no-repeat;
+    /* min-height: 100vh; */
+    height: auto;
+    width: 1550px;
+    margin: 0 auto;
+
+}
+
+
+ 
+section{
+    margin:0 175px;
+}
+
+/*-------品牌寓意--------*/
+section:nth-child(2){
+    /* outline: 2px solid red; */
+    width: 760px;
+    padding: 100px 0;
     
 }
+
+section  h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    /* outline: 2px solid red; */
+   
+}
+
+
+.story{/*LOGO跟寓意div*/
+    display: flex;
+    gap:64px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 68px;
+}
+
+
+.storyLogo{}/*LOGO的div*/
+
+
+.storyLogo img{
+    display: block;
+}
+
+
+.storyConetent{}/*寓意的div*/
+
+
+.storyConetent p{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    width: 522px;
+    height: 200px;
+    /* outline: 2px solid rgb(0, 17, 255); */
+
+}
+
+
+
+
+/*-------環境介紹--------*/
+section:nth-child(3){
+    /* outline: 2px solid rgb(55, 0, 255); */
+    padding: 100px 0;
+    height: 2740px;
+    display: flex;
+    flex-direction: column;
+    gap:240px;/*區塊上下中間間距*/
+    justify-content: space-between;
+    position: relative;   
+}
+
+
+.tourContent h1{
+    /* outline: yellow 5px solid; */
+    text-align: center;
+    position: absolute;
+    right: 155px;
+    top:50px;
+   
+
+
+}
+
+
+
+.tour{/*環境照片+文字介紹區塊div*/
+    /* outline: 4px solid black; */
+    display: flex;
+    gap:80px; /*文字跟照片中間間距*/
+
+    position: relative;/*彩霞img相對定位*/
+}
+
+
+.tourPic{/*環境照片div*/
+    /* outline: 4px solid rgb(166, 24, 24); */
+
+    background-color: white;
+    border-radius: 40px;
+
+    padding: 30px;
+
+
+
+}
+
+
+.tourPic img{
+    display: block;
+    width: auto;
+    height:100% ;
+
+    border-radius: 40px;
+
+}
+
+
+
+.tourContent{/*環境介紹文字div*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+
+.tourContent h4{
+    text-align: center;
+    margin: 36px auto;
+    
+
+}
+
+
+
+.tourContent p{
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 30px;
+
+}
+
+
+/* 洗手間圖片放右邊 */
+.tour:nth-of-type(2) .tourPic {
+  order: 2;
+}
+
+/* 櫃台圖片放右邊 */
+.tour:nth-of-type(4) .tourPic {
+  order: 2;
+}
+
+
+.cloudTop{/*雲朵img*/
+    position: absolute;
+    right: -380px;
+    top:520px;
+
+    z-index: 1;
+
+    opacity: 0;
+    animation: cloudTop 2s linear 0s 1 forwards;
+}
+
+@keyframes cloudTop{
+    0%{
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.8);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(-300px, 0px) scale(1.2);
+    }
+}
+
+
+.cloudBottom{
+    position: absolute;
+    left: -385px;
+    bottom: 540px;
+
+    z-index: 1;
+
+    opacity: 0;
+    animation: cloudBottom 2s linear 2s 1 forwards;
+}
+
+
+@keyframes cloudBottom{
+    0%{
+        opacity: 0;
+        transform: translate(0px, 0px) scale(0.8);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(300px, 0px) scale(1.5);
+    }
+}
+
+
+
+
+/*-------交通資訊-------*/
+
+section:nth-child(4){
+
+    /* outline: 2px rgb(0, 0, 0) solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin: 156px 0 28px;
+}
+
+
+.trafficLeft{/*左邊的div*/
+    /* outline: 2px red solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 36px;
+    height: 440px;
+
+
+}
+
+
+.trafficLeft h1{
+    /* outline: yellow 2px solid; */
+    margin-bottom: auto;
+
+}
+
+
+.trafficLeft img{
+    /* outline: rgb(119, 0, 255) 2px solid; */
+
+
+}
+
+.trafficAdress{/*左邊下方地址icon+地址的div*/
+
+    /* outline: rgb(13, 13, 7) 2px solid; */
+    display: flex;
+    align-items: center;
+    gap:8px
+
+
+
+}
+
+
+.trafficAdress img{
+    display: block;
+
+}
+
+
+.trafficAdress p{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 2px;
+
+}
+
+
+.trafficRight{/*右邊區塊的div*/
+    /* outline: 2px rgb(60, 0, 255) solid; */
+
+
+}
+
+
+.trafficRight{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+
+}
+
+
+.ways{/*三種交通方式框框的div*/
+    /* outline: 1px dashed gray; */
+    background-color: #FFF9F0;
+    border-radius: 40px;
+    padding: 30px;
+    width: 540px;
+
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+}
+
+
+.waysIcon{
+    height: 60px;
+    width: auto;
+    display: block;
+
+}
+
+.waysIcon img{
+
+}
+
+
+.waysContent{
+
+}
+
+
+.waysContent p{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 2px;
+
+}
+
+
+.waysContent p:first-child{
+    font-weight: bold;
+}
+
+
+
+
+/*地圖*/
+
+.map{
+    margin-bottom: 56px;
+    width: 100%;
+}
+
+iframe{
+    width: 100%;
+    height: 400px;  
+
+}
+
+
+
+
+
