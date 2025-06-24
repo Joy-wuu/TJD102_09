@@ -8,21 +8,31 @@
 }
 
 .wrapper{
+    /* outline: 1px black solid; */
     width: 1440px;
     margin: 0 auto;
-    outline: 2px rgb(17, 15, 15) solid;
+    /* outline: 2px rgb(17, 15, 15) solid; */
     padding: 96px 120px;
+
+    background-image: url("../img/home/backgroun_feedback.png");
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-height: 1496px;
 }
 
 
-section:nth-child(2){/*最新消息*/
+
+/*-------------最新消息---------------*/
+section:nth-child(2){
 
 }
 
 
 
 
-section:nth-child(2) h3{
+section>h3{
     font-size: 30px;
     font-weight: bold;
     text-align: center;
@@ -30,7 +40,7 @@ section:nth-child(2) h3{
 
 
 .newsDiv{/*包最新消息的綠底div*/
-    outline: red 2px solid;
+    /* outline: red 2px solid; */
     background-image: url(../img/home/background_news.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -131,3 +141,114 @@ section:nth-child(2) h3{
 
 
 }
+
+
+
+
+
+/*-------------學生回饋---------------*/
+section:nth-child(3){
+    /* outline: 2px rgb(2, 4, 2) solid; */
+
+
+}
+
+
+.feedback{/*ul*/
+    /* outline: 5px green solid; */
+    margin-top: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 1200px;
+    margin: 0 auto;
+    
+    
+
+}
+
+
+.feedback li{
+    background-color: white;
+    border-radius: 100px 100px 20px 20px;
+    width: 368px;
+    height:auto;
+    padding: 12px;
+
+    margin:50px 0;
+
+
+}
+
+
+.feedback li>img{/*學生照片*/
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+
+.feedbackContent{/*--包住下方資訊的div--*/
+    /* outline: red 2px solid; */
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 16px;
+
+    width: 330px;
+
+}
+
+
+.feedbackTop{/*icon及學生年級姓名的div*/
+    /* outline: rgb(166, 255, 0) 2px solid; */
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+
+.feedbackTop img{/*icon*/
+
+}
+
+.feedbackTop h4{/*年級姓名*/
+
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+
+
+.feedbackBottom{/*包住下方回饋內容的div*/
+    /* outline: blue 2px solid; */
+
+}
+
+
+.feedbackBottom p{
+
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
