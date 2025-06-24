@@ -71,7 +71,17 @@ section>h3{
 
     position: relative;
 
+    transition: 0.8s;
 
+}
+
+.news:hover{
+    transform: scale(1.1);
+}
+
+/*圖釘動*/
+.news:hover .newsContent img:hover{
+    transform: scale(1.1) translate(40px, -10px);
 }
 
 .news img{
@@ -92,6 +102,8 @@ section>h3{
     position: absolute;
     right: 0;
     top: 0;
+
+    transition: 0.5s;
 }
 
 
@@ -172,15 +184,23 @@ section:nth-child(3){
 
 .feedback li{
     background-color: white;
-    border-radius: 100px 100px 20px 20px;
+    border: 2px solid #17AA6C;
+    
+    border-radius: 120px 120px 20px 20px;
     width: 368px;
     height:auto;
     padding: 12px;
+    box-sizing: border-box;
 
     margin:50px 0;
-
+    transition: 0.8s;
 
 }
+
+.feedback li:hover{
+    transform: scale(1.1);
+}
+
 
 
 .feedback li>img{/*學生照片*/
