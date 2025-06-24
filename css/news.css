@@ -6,3 +6,128 @@
     background-position:bottom center; 
     min-height: 563px;
 }
+
+.wrapper{
+    width: 1440px;
+    margin: 0 auto;
+    outline: 2px rgb(17, 15, 15) solid;
+    padding: 96px 120px;
+}
+
+
+section:nth-child(2){/*最新消息*/
+
+}
+
+
+
+
+section:nth-child(2) h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.newsDiv{/*包最新消息的綠底div*/
+    outline: red 2px solid;
+    background-image: url(../img/home/background_news.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1200px;
+    margin: 48px auto 96px;
+    height: 330px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 52px;
+    
+}
+
+.news{/*單一消息的div*/
+    background-color: #fff;
+    width: 515px;
+    height: 196px;
+    border-radius: 70px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    position: relative;
+
+
+}
+
+.news img{
+
+    display: block;
+}
+
+.newsContent{/*右邊文字的div*/
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.newsContent img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.newsContent h4{
+    font-size: 18px;
+    font-weight: bold;
+    
+
+
+}
+
+
+.newsContent p{
+    width: 230px;
+    font-size: 16px;
+    line-height: 22px;
+    
+
+}
+
+
+.newsContent a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: #17AA6C;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    text-align: center;
+    font-size: 14px;
+    width: 52px;
+    height: 36px;
+    line-height: 36px;
+    letter-spacing: 1px;
+
+    position: absolute;
+    right: 50px;
+    bottom: 15px;
+
+}
+
+
+.newsContent a:hover{
+    background-color: white;
+    border: 2px solid #17AA6C;
+    color: #17AA6C;
+
+
+}
