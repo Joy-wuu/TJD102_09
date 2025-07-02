@@ -15,8 +15,10 @@
 /*中間*/
 main{
     /* outline: 2px black solid; */
-    width: auto;
-    margin: 48px auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 48px 0;
+    margin: 0 auto;
     background-image: url(../img/home/background_teacher.png);
     background-position:center;
     background-size: cover;
@@ -45,14 +47,27 @@ section>h1{
 
 }
 
+section:nth-child(3){
+    width: 1200px;
+    margin:0 auto;
+    border: 1px black solid;
+}
+
 
 
 .cardBackgrond{
+    /* outline: 10px rgb(0, 255, 98) solid; */
+
     background-color: #D26E49;
     border-radius: 100px;
-    width: 1200px;
-    height: 1353px;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    min-height: 90vh;
     margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -204,10 +219,15 @@ section>h1{
 .cardBottom{
     /* outline: black 2px solid; */
     background-image: url(../img/home/cardBottom.png);
-    width: 1073px;
-    height: 710px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 95%;
+    height: 100%;
+    min-height: 710px;
+    
     margin: 0 auto;
     margin-bottom: 68px;
+    
 
     position: relative;
     z-index: 3;
@@ -276,13 +296,19 @@ ul.teacherLeft li p{
 
 }
 
+li p+p{
+    /* outline: 1px solid red; */
+    padding-left: 1em;
+}
+
 
 
 
 .yt{/*右邊影片的div*/
 
     /* outline: 1px solid rgb(255, 255, 0); */
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 
     display: flex;
     align-content: center;

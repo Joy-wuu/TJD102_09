@@ -148,6 +148,7 @@ section:nth-child(3){
 .tourContent h4{
     text-align: center;
     margin: 36px auto;
+    font-size: 16px;
     
 
 }
@@ -260,6 +261,7 @@ section:nth-child(4){
     /* outline: rgb(119, 0, 255) 2px solid; */
 
 
+
 }
 
 .trafficAdress{/*左邊下方地址icon+地址的div*/
@@ -276,6 +278,8 @@ section:nth-child(4){
 
 .trafficAdress img{
     display: block;
+
+
 
 }
 
@@ -326,6 +330,10 @@ section:nth-child(4){
 }
 
 .waysIcon img{
+    width: 48px;
+    height: auto;
+
+    /* outline: 1px red solid; */
 
 }
 
