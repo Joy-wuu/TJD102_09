@@ -15,7 +15,7 @@ header{
     background-size: cover;
     background-position:bottom center;
     width: 100%;
-    min-width: 1200px;
+
 }
 
 .tool{
@@ -135,7 +135,7 @@ a.airplan img{
 
     width: 100%;
     height: auto;
-    max-width: 50vw;
+    max-width: 120px;
     transition: transform 0.5s;
     
 
@@ -151,43 +151,49 @@ a.airplan img{
 
 
 footer{
-    /* border: 1px solid red; */
+    /* border: 1px solid rgb(0, 0, 0); */
     height: auto;
     width: 100%;
-    background-color: #FFE9CA;
-    border-radius: 150px 150px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
 
     
-
+    background-color: #FFE9CA;
+    border-radius: 150px 150px 0 0;
 
 }
 
 
 .bottom{
     /* outline: 1px red solid; */
+    width: 90%;
+    max-width: 100vw;
+    margin: 0 auto;
 
-    width: 100%;;
-    max-width: 1200px;
+
+
     height: 364px;
     
 
     display: flex;
     align-items: center;
+    justify-content: center;
+    
+    gap:40px;
 
-    padding: 50px;
+    padding: 50px 0;
+
+
     
 
 }
 
 .footerLogo{/*包住logo的div*/
-    flex-grow: 1;
-    justify-content: center;
 
-    flex-basis:0 ;
+
+    justify-content: center;
+    width: auto;
+    flex: 1 1 300px;   
+    max-width: 33%;     
+
 
 
     /* outline: 2px solid blue; */
@@ -198,7 +204,8 @@ footer{
 
 .footerLogo img{
     display: block;
-    /* margin: 0 auto; */
+    margin: 0 auto;
+
 
 }
 
@@ -206,19 +213,19 @@ footer{
 
 /*--------中間icons的ul---------*/
 ul.introduce{
-    flex-grow: 1;
-
 
     height: 364px;
+    width: auto;
+    margin: 0 auto;
 
-    flex-basis:0 ;
-
- 
 
     /* outline: 2px solid rgb(0, 255, 102); */
 
     display: flex;
     flex-direction: column;
+
+    flex: 1 1 300px;   
+    max-width: 33%;   
 
 
 
@@ -256,6 +263,7 @@ ul.introduce li img{
     /* outline: 2px rgb(230, 0, 255) solid; */
     width: 24px;
     height: 24px;
+
     
 
 
@@ -278,12 +286,15 @@ ul.introduce li p{
 ul.footerLesson{
     /* outline: 2px solid blue; */
 
-    flex-basis:0 ;
-    flex-grow: 1;
+    flex: 1 1 100px;   
+    max-width: 33%;   
+
     align-items: center;
     justify-items: center;
 
     height: 364px;
+    width: auto;
+
 
     display: flex;/*讓li等高*/
     

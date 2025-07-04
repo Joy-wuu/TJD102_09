@@ -14,15 +14,22 @@
 
 /*中間*/
 main{
+    /* border: 1px solid seagreen; */
+    background-image: url(../img/home/background_teacher.png);
+    
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.wrapper{
     /* outline: 2px black solid; */
     width: 100%;
     max-width: 1200px;
     padding: 48px 0;
     margin: 0 auto;
-    background-image: url(../img/home/background_teacher.png);
-    background-position:center;
-    background-size: cover;
-    min-height: 100vh;
+
+   
 
     display: flex;
     flex-direction: column;
@@ -48,9 +55,10 @@ section>h1{
 }
 
 section:nth-child(3){
-    width: 1200px;
+    width: 95%;
+    max-width: 1200px;
     margin:0 auto;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 
@@ -63,11 +71,14 @@ section:nth-child(3){
     width: 100%;
     max-width: 1200px;
     height: auto;
-    min-height: 90vh;
+    max-height: 1400px;
     margin: 0 auto;
 
     display: flex;
     flex-direction: column;
+
+    box-sizing: border-box;
+    overflow: hidden;
 
 }
 
@@ -101,7 +112,7 @@ section:nth-child(3){
     border: none;
     background:none;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     line-height: 36px;
@@ -192,10 +203,11 @@ section:nth-child(3){
 
 
 .cardTop h1{/*科目*/
-    font-size: 370px;
+    /* font-size: 370px; */
+    font-size: clamp(100px, 30vw, 370px);
     font-family: "Jomhuria", serif;
     /* font-weight: bolder; */
-    letter-spacing: 30px;
+    letter-spacing: 0.1em;
     color: rgba(255, 183, 147, 0.6);
     text-align: center;
 
@@ -227,6 +239,8 @@ section:nth-child(3){
     
     margin: 0 auto;
     margin-bottom: 68px;
+    padding: auto 25px;
+    box-sizing: border-box;
     
 
     position: relative;
@@ -245,6 +259,8 @@ section:nth-child(3){
 .cardContent{/*左邊文字介紹的div*/
     /* outline: 1px solid rgb(246, 255, 0); */
     height: 60%;
+    max-width: 500px;
+ 
 
 
 }
@@ -307,8 +323,8 @@ li p+p{
 .yt{/*右邊影片的div*/
 
     /* outline: 1px solid rgb(255, 255, 0); */
-    width: 100%;
-    max-width: 500px;
+    width: 50%;
+    max-width: 400px;
 
     display: flex;
     align-content: center;
@@ -340,7 +356,8 @@ li p+p{
 video{
     display: block;
     border-radius: 10px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     color: rgba(233, 121, 222, 0.5);
 
     
