@@ -7,7 +7,7 @@
     background-image: url(../img/home/teacher_header.png);
     /* background-size: cover; */
     background-position:bottom center;
-    min-height: 563px;
+    max-height: 563px;
 
     
 
@@ -20,7 +20,7 @@
 /*中間*/
 main{
     width: auto;
-    margin-top: 48px;
+    margin-top: 18px;
     background-image: url(../img/home/background_subject.png);
     /* background-position:center; */
     background-size: cover;
@@ -54,7 +54,8 @@ section{
     /* outline: 2px rgb(222, 61, 25) solid; */
     color:#343333;
 
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 
     display:flex;
@@ -80,8 +81,10 @@ section{
 }
 
 .lessonCard{
-    width: 450px;
-    height: 330px;
+    width: 40%;
+    max-width: 450px;
+    
+    max-height: 350px;
     border-radius: 50px;
     padding: 50px;
     box-sizing: border-box;
