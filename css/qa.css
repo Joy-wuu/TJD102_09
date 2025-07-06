@@ -20,20 +20,35 @@ section>h3{
 }
 
 
+
+html, main{
+  overflow-x: hidden;
+
+}
+
 main{
+  background-image: url(../img/home/background_qa.png);
+  background-position:top center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  
+
 
 }
 
 .wrapper{
   /* outline: 2px black solid; */
 
-  background-image: url(../img/home/background_qa.png);
-  width: 1440px;
-  min-height: 1500px;
+  width: 100%;
+  max-width: 1200px;
+
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: top center;
   min-height: 1910px;
+  box-sizing: border-box;
+
   
 
 }
@@ -41,22 +56,31 @@ main{
 
 section:nth-child(3){
   /* outline: 2px rgb(85, 15, 15) solid; */
+  width: 100%;
 
   display: flex;
   flex-direction: column;
   gap: 48px;
 
   margin-bottom: 96px;
+  box-sizing: border-box;
+
 
 }
 
 details{
   margin: 0 auto;
-  width: 836px;
+  width: 100%;
+  max-width: 836px;
+  box-sizing: border-box;
+
   
 }
 
 summary{
+  width: 100%;
+  max-width: 836px;
+
   padding-right: 28px;
   font-size: 16px;
   letter-spacing: 2px;
@@ -68,10 +92,15 @@ summary{
   border: 4px solid #D26E49;
   border-radius: 10px;
   padding: 16px 36px;
+  box-sizing: border-box;
 
   display: flex;
   align-items: center;
   gap: 12px;
+
+  flex-wrap: wrap;
+  word-break: break-word;
+  
 }
 
 summary::after{
@@ -83,6 +112,8 @@ summary::after{
   border-right:3px gray solid;
   transform: rotate(135deg);
   margin-left: auto;
+  box-sizing: border-box;
+
 
 }
 
@@ -100,11 +131,15 @@ details[open] summary{
 
 
 details[open] summary::after{
-   transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+
 }
 
 summary img{
   display: block;
+  max-width: 100%;
+  height: auto;
 
 }
 
@@ -122,5 +157,6 @@ details p{
   padding: 16px 56px 36px 72px;
 
 }
+
 
 
