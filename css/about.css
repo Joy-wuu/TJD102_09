@@ -235,7 +235,7 @@ section:nth-child(3){
 
 .cloudBottom{
     position: absolute;
-    left: -80px;
+    left: -40px;
     bottom: 540px;
 
     z-index: 1;
