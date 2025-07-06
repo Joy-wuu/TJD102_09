@@ -9,18 +9,29 @@
 
 .wrapper{
     /* outline: 1px black solid; */
-    width: 1440px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     /* outline: 2px rgb(17, 15, 15) solid; */
-    padding: 96px 120px;
+    padding: 96px 0;
 
+
+    /* min-height: 1496px; */
+}
+
+main{
     background-image: url("../img/home/backgroun_feedback.png");
-
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    min-height: 1496px;
+    margin: 0 auto;
+
 }
+html,
+body { 
+    overflow-x: hidden;
+    max-width: 100vw;
+}	
 
 
 
@@ -33,32 +44,40 @@ section:nth-child(2){
 
 
 section>h3{
-    font-size: 30px;
+    font-size: 2em;
     font-weight: bold;
     text-align: center;
 }
 
 
 .newsDiv{/*包最新消息的綠底div*/
-    /* outline: red 2px solid; */
+    /* outline: rgb(191, 255, 0) 2px solid; */
     background-image: url(../img/home/background_news.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 48px auto 96px;
     height: 330px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 52px;
+    gap: 1.5em;
+    box-sizing: border-box;
     
 }
 
 .news{/*單一消息的div*/
+/* outline: 1px red solid; */
+
+
     background-color: #fff;
-    width: 515px;
+
+    width: 45%;
+    max-width: 550px;
+
     height: 196px;
     border-radius: 70px;
     padding: 20px;
@@ -67,43 +86,56 @@ section>h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 0.8em;
 
-    position: relative;
 
     transition: 0.8s;
+    overflow: hidden;
+    
 
 }
 
 .news:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.02); */
 }
 
 /*圖釘動*/
 .news:hover .newsContent img:hover{
-    transform: scale(1.1) translate(40px, -10px);
+    /* transform: scale(1.05) translate(30px, -10px); */
 }
 
 .news img{
 
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .newsContent{/*右邊文字的div*/
+    /* outline: 2px red solid; */
     letter-spacing: 2px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 8px;
+    gap: 0.8em;
+    width: 55%;
+    height: 100%;
+    
+    position: relative;
 
 }
 
 .newsContent img{
-    position: absolute;
-    right: 0;
-    top: 0;
-
+    /* outline: 1px rgb(0, 0, 0) solid; */
+    max-width: 30px;
+    height: auto;
     transition: 0.5s;
+    
+    position: absolute;
+    top: 5px;
+    right: 3%;
+
+
 }
 
 
@@ -117,9 +149,12 @@ section>h3{
 
 
 .newsContent p{
-    width: 230px;
+    width:100%;
+    max-width: 230px;
     font-size: 16px;
     line-height: 22px;
+    /* outline: 2px rgb(240, 240, 240) solid; */
+
     
 
 }
@@ -140,8 +175,8 @@ section>h3{
     letter-spacing: 1px;
 
     position: absolute;
-    right: 50px;
-    bottom: 15px;
+    right: 3%;
+    bottom: 0px;
 
 }
 
@@ -174,7 +209,8 @@ section:nth-child(3){
     justify-content: space-between;
     flex-wrap: wrap;
 
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     
     
@@ -187,7 +223,8 @@ section:nth-child(3){
     border: 2px solid #17AA6C;
     
     border-radius: 120px 120px 20px 20px;
-    width: 368px;
+    width: auto;
+    max-width: 368px;
     height:auto;
     padding: 12px;
     box-sizing: border-box;
@@ -198,7 +235,7 @@ section:nth-child(3){
 }
 
 .feedback li:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.05); */
 }
 
 
@@ -220,8 +257,8 @@ section:nth-child(3){
     /* align-items: center; */
     justify-content: center;
     gap: 16px;
-
-    width: 330px;
+    width: 90%;
+    max-width: 330px;
 
 }
 

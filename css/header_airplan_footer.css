@@ -59,7 +59,7 @@ header{
 .top ul{
     /* outline: 3px red solid; */
 
-    /* margin-right: 20px; */
+    margin-right: 20px;
     float: right;
     background-color: #FFE9CA;
     box-shadow: 20px 20px 30px rgba(242, 157, 111, 0.4);
