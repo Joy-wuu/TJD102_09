@@ -4,38 +4,46 @@ body{
     background-color: #FFF4E3;
     font-family:Verdana;
     color:#343333;
+    overflow-x: hidden;
     
 
 }
 
 /*-----LOGO及工作列----*/
 header{
-    /* border: 3px black solid; */
+    border: 3px black solid;
     background-image: url(../img/home/main_header.png);
     background-size: cover;
     background-position:bottom center;
-    width: 100%;
+    width: auto;
 
 }
 
 .tool{
-    /* border: blue 3px solid; */
-    padding: 0 130px ;
+    border: blue 3px solid;
+
     margin-top: 26px;
+    margin:24px 20px 0px 20px;
+
     overflow: hidden;
     width: 100%;
 
+    max-width: 100vw;
+
     position:fixed;
     z-index: 99;
+
+    box-sizing: border-box;
 
     
 }
 
 
 .top{
-    /* background-image: url(../img/home/main_header.png); */
+    background-image: url(../img/home/main_header.png);
     height: 563px;
     background-size: cover;
+    width: auto;
     
     overflow: hidden;
 }
@@ -43,14 +51,15 @@ header{
 .top img{
     float: left; 
     display: block;
+    
 }
 
 
 
 .top ul{
     /* outline: 3px red solid; */
-    padding-right: 130px;
 
+    /* margin-right: 20px; */
     float: right;
     background-color: #FFE9CA;
     box-shadow: 20px 20px 30px rgba(242, 157, 111, 0.4);
