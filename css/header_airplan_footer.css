@@ -11,7 +11,7 @@ body{
 
 /*-----LOGO及工作列----*/
 header{
-    border: 3px black solid;
+    /* border: 3px black solid; */
     background-image: url(../img/home/main_header.png);
     background-size: cover;
     background-position:bottom center;
@@ -20,7 +20,7 @@ header{
 }
 
 .tool{
-    border: blue 3px solid;
+    /* border: blue 3px solid; */
 
     margin-top: 26px;
     margin:24px 20px 0px 20px;
