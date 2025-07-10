@@ -191,10 +191,11 @@
 }
 
 .honor{/*兩區榮譽榜 區塊名稱共用*/
-    /* border: red 1px solid; */
+    /* border: rgb(195, 255, 0) 1px solid; */
     margin-left: 100px;
     margin-top: 140px;
-    width: 500px;
+    width: 100%;
+    max-width: 600px;
 
 }
 
@@ -209,7 +210,7 @@
 
 
 .honor h4{
-    font-size: 28px;
+    font-size: 2em;
     font-weight:bold;
     /* border: rgb(60, 255, 0) 1px solid; */
     text-align: center;
@@ -220,9 +221,10 @@
 
 
 .honorContext{/*包住圖片+p的div*/
+    /* outline: #666 1px solid; */
     display: flex;
     /* justify-content: space-between; */
-    gap: 12px;
+    gap: 1.5em;
 
 
 }
@@ -239,49 +241,93 @@
 }
 
 
-.honorName{/*包住Pㄉdiv*/
-    /* border: 1px rgb(255, 149, 0) solid; */
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+/*------------ 輪播區 -------------*/
 
+
+
+
+.sliderBoard{   /* div */
+    /* outline: 5px solid #e11111; */
+
+
+    width: 100%;
+    min-width: 350px;
+
+    height: 120px;
+    
+
+    
+	overflow: hidden;
+}
+.content{       /* ul */
+    position: relative;
+    display: flex;
+
+    /* outline: 1px solid #5132cf; */
 
 }
 
-.honorName p{
-    line-height: 1.2;
-    font-size: 18px;
-    color:rgb(52, 51, 51);
-
-    /* border: 1px blue solid; */
+.content li{    /* li */
+    
+    /* outline: 1px solid #3b11e1; */
+    width: 100%;
+    flex-shrink: 0;
+    height: 75%;
     
 
 
-}
-
-.honor ul{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 28px;
 
 }
 
+/* circle button */
+.contentButton{
+    /* background-color:rgb(255, 170, 0); */
+    text-align: center;
 
-.honor li{
+    width: 100%;
+    height:20%;
+    margin-top:5px;
 
 }
 
+.contentButton li{
+    width: 8px;
+    height:8px;
 
-.honor button{
-    cursor: pointer;
-    border: none;
-    width: 12px;
-    height: 12px;
+
+    
     border-radius: 50%;
-    background-color:#BCBCBC;
+    background-color: #ccc;
+    margin:  0.3em 0.3em 0;
 
+    display: inline-block;
+    
+    
+    
 }
+
+
+.contentButton li.clicked{
+    background-color: #666;
+}
+
+
+
+
+
+
+
+.content p{
+    line-height: 1.5;
+    font-size: 16px;
+    color:rgb(52, 52, 51);
+    margin-bottom: 8px;
+
+    /* border: 1px rgb(5, 103, 5) solid; */
+
+    
+}
+
 
 
 
