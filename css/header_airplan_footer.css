@@ -9,9 +9,13 @@ body{
 
 }
 
+html{
+    font-size: 16px;
+}
+
 /*-----LOGO及工作列----*/
 header{
-    /* border: 3px black solid; */
+    outline: 3px black solid;
     background-image: url(../img/home/main_header.png);
     background-size: cover;
     background-position:bottom center;
@@ -20,9 +24,9 @@ header{
 }
 
 .tool{
-    /* border: blue 3px solid; */
+    /* outline: blue 3px solid; */
 
-    margin-top: 26px;
+
     margin:24px 20px 0px 20px;
 
     overflow: hidden;
@@ -41,7 +45,7 @@ header{
 
 .top{
     background-image: url(../img/home/main_header.png);
-    height: 563px;
+    min-height: 469px;
     background-size: cover;
     width: auto;
     
@@ -54,6 +58,10 @@ header{
     
 }
 
+.top i.fa{
+    display: none;
+}
+
 
 
 .top ul{
@@ -62,7 +70,7 @@ header{
     margin-right: 20px;
     float: right;
     background-color: #FFE9CA;
-    box-shadow: 20px 20px 30px rgba(242, 157, 111, 0.4);
+    
     height: 60px; 
     width: 60%;
 
@@ -92,7 +100,7 @@ header{
     display: block;
     line-height: 60px;
     height: 60px;
-    font-size: 18px;
+    font-size: 1.2rem;
     color:rgb(52, 51, 51);
     font-weight: bold;
 
@@ -375,6 +383,152 @@ ul.footerLesson li img{
     /* outline: 2px solid rgb(255, 0, 0); */
     display: block;
     
+
+
+
+}
+
+
+
+
+
+/*-------- RWD 820px ---------*/
+@media screen and (max-width:821px){
+
+
+    .top{
+        min-height: 320px;
+
+    }
+
+    .bottom{
+        flex-direction: column;
+        height: auto;
+        
+        
+    }
+
+
+    .footerLogo,
+    ul.introduce,
+    ul.footerLesson{
+        /* outline: 1px black solid; */
+        width:100%;
+        max-width: 100%;
+        height: auto;
+        flex: none;
+        gap: 10px;
+        
+    }
+
+    .introduce li{
+        align-items: center;
+        justify-content: center;
+  
+
+    }
+
+
+
+}
+
+
+
+
+@media screen and (max-width:431px){
+
+
+    .top{
+  
+        min-height: 230px;
+        background-position: top;
+        position: relative;
+        /* overflow: visible; */
+    }
+    .tool{
+        background-color: #FFE9CA;
+        margin: 0;
+        height: 60px;
+        overflow: visible;
+    }
+
+    .tool a img{
+        height: 44px;
+        width: auto;
+        margin-top: 8px;
+        margin-left: 16px;
+
+    }
+
+
+
+    .top i.fa{
+        display: block;
+        float: right;
+        margin-right: 16px;
+        margin-top: 20px;
+
+        color: #343333;
+        width:auto;
+        height: 28px;
+    }
+
+
+    #menuList{ /* ul */
+        position: absolute;
+        top:60px;
+        left:0;
+        z-index: 99;
+        width: 100%;
+        height: auto;
+        /* max-height: 0; */
+        border:0;
+        border-radius:  0 0 150px 150px;
+
+        /* overflow: hidden; */
+        /* transition: max-height 0.4s linear; */
+
+        display: none;
+        
+    }
+
+
+    #menuList.show {
+        display: block;
+        /* max-height: 1000px; */
+
+    }
+
+
+
+    #menuList li{
+        width: 100%;
+        height: auto;
+        
+        z-index: 99;
+
+    }
+
+
+    #menuList li:hover a{
+        border-radius: 0;
+        background-color: transparent;
+        text-decoration: underline;
+        color: black;
+    }
+
+
+    #menuList li a{
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
 
 
 

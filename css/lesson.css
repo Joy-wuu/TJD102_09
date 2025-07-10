@@ -20,11 +20,11 @@
 /*中間*/
 main{
     width: auto;
-    margin-top: 18px;
+    padding: 18px;
     background-image: url(../img/home/background_subject.png);
     /* background-position:center; */
     background-size: cover;
-    min-height: 100vh;
+    
 
     display: flex;
     flex-direction: column;
@@ -42,11 +42,11 @@ html, body{
 }
 
 section>h1{
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     line-height: 60px;
-    padding: 30px 0;
+
 
 }
 
@@ -94,6 +94,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 
         
@@ -130,6 +131,7 @@ section{
 .tittleRow img{
     display: block;
 
+
 }
 
 .tittleRow img:hover {
@@ -150,15 +152,19 @@ section{
 
 
 .lessonCard h3{
-    font-size: 28px;
-    line-height: 24px;
+    font-size: 1.8rem;
+    line-height: 2rem;
     height: 24px;
 
 }
 
+.lessonCard>img{
+    width: 100%;
+}
 
 .lessonCard p{
-    width: 300px;
+    width: 100%;
+    /* max-width: 300px; */
     font-size: 16px;
     line-height: 1.4;
     letter-spacing: 2px;
@@ -226,7 +232,7 @@ section{
     margin: 0 auto;
 
 
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: bold;
 
 
@@ -239,11 +245,15 @@ section{
     border-radius: 20px;
     width:90px;
 
+    border: 2px transparent solid;
+
+
 }
 
 
 .lessonList ul li a:hover{
     background-color: rgba(255, 250, 240, 0.7);
+    border: 2px #F29D6F solid;
 
 
 }
@@ -252,6 +262,36 @@ section{
 
 .juniorList{
     order: 0;
+
+}
+
+
+
+
+
+
+
+
+
+/*---------rwd平板820px-----------*/
+
+@media screen and (max-width:821px) {
+    html{
+        font-size: 14px;
+    }
+    
+    .lesson{
+        width: 100vw;
+    }
+
+    .honorRoll{
+        width: 100vw;
+    }
+
+    .environment{
+        width: 100vw;
+    }
+
 
 }
 
