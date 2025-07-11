@@ -15,7 +15,7 @@ html{
 
 /*-----LOGO及工作列----*/
 header{
-    outline: 3px black solid;
+    /* outline: 3px black solid; */
     background-image: url(../img/home/main_header.png);
     background-size: cover;
     background-position:bottom center;

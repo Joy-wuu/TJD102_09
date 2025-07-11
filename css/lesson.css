@@ -81,6 +81,9 @@ section{
 }
 
 .lessonCard{
+
+    /* outline: #000000 1px solid; */
+
     width: 40%;
     max-width: 450px;
     
@@ -188,7 +191,7 @@ section{
 .lessonList{
     display: flex;
     align-items: center;
-    /* outline:  5px blue solid; */
+    /* outline:  1px blue solid; */
     width: 450px;
 }
 
@@ -273,7 +276,7 @@ section{
 
 
 
-/*---------rwd平板820px-----------*/
+/*--------- rwd 平板 820px -----------*/
 
 @media screen and (max-width:821px) {
     html{
@@ -296,5 +299,38 @@ section{
 }
 
 
+
+/*--------- rwd 平板 430px -----------*/
+
+@media screen and (max-width:431px) {
+    html{
+        font-size: 14px;
+    }
+
+    .sub{
+        display: block;
+    }
+
+    .lessonCard{
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto 28px;
+
+    }
+
+    .lessonCard p{
+        font-size: 14px;
+    }
+
+    .lessonList{
+        max-width: 380px;
+        margin: 0 auto ;
+    }
+
+
+
+
+
+}
 
    
