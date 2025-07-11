@@ -7,7 +7,7 @@
     background-image: url(../img/home/teacher_header.png);
     /* background-size: cover; */
     background-position:bottom center;
-    max-height: 563px;
+    max-height: 469px;
 
     
 
@@ -300,7 +300,7 @@ section{
 
 
 
-/*--------- rwd 平板 430px -----------*/
+/*--------- rwd 手機 430px -----------*/
 
 @media screen and (max-width:431px) {
     html{
