@@ -34,7 +34,7 @@ section{
 
 /*-------品牌寓意--------*/
 section:nth-child(2){
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     padding: 100px 5px;
 
     width: 100%;
@@ -52,7 +52,7 @@ section  h1{
 
 
 .story{/*LOGO跟寓意div*/
-    outline: 2px solid rgb(4, 4, 5);
+    /* outline: 2px solid rgb(4, 4, 5); */
 
     display: flex;
     gap:64px;
@@ -62,7 +62,10 @@ section  h1{
 }
 
 
-.storyLogo{}/*LOGO的div*/
+.storyLogo{
+    /* outline: 2px solid rgb(73, 73, 181); */
+
+}/*LOGO的div*/
 
 
 .storyLogo img{
@@ -73,7 +76,7 @@ section  h1{
 
 
 .storyConetent{/*寓意的div*/
-    outline: 2px solid rgb(4, 4, 5);
+    /* outline: 2px solid rgb(4, 4, 5); */
 
 }
 
@@ -94,7 +97,7 @@ section  h1{
 
 /*-------環境介紹--------*/
 section:nth-child(3){
-    outline: 2px solid rgb(255, 196, 0);
+    /* outline: 2px solid rgb(255, 196, 0); */
     padding: 100px 0;
     height: 2740px;
     width: 100%;
@@ -129,7 +132,7 @@ section:nth-child(3){
 
 
 .tour{/*環境照片+文字介紹區塊div*/
-    outline: 4px solid black;
+    /* outline: 4px solid black; */
     display: flex;
     gap:1rem; /*文字跟照片中間間距*/
 
@@ -147,7 +150,7 @@ section:nth-child(3){
 
 
 .tourPic{/*環境照片div*/
-  outline: 4px solid rgb(166, 24, 24);
+  /* outline: 4px solid rgb(166, 24, 24); */
   flex: 1;
   max-width: 600px;
   height: 80%;
@@ -172,7 +175,7 @@ section:nth-child(3){
 
 
 .tourContent{/*環境介紹文字div*/
-    outline: 4px solid rgb(166, 24, 24);
+    /* outline: 4px solid rgb(166, 24, 24); */
 
     display: flex;
     flex-direction: column;
@@ -204,15 +207,13 @@ section:nth-child(3){
 }
 
 
-/* 洗手間圖片放右邊 */
-.tour:nth-of-type(2) .tourPic {
-  order: 2;
-}
-
-/* 櫃台圖片放右邊 */
+/* 茶水間 & 櫃台圖片放右邊 */
+.tour:nth-of-type(2) .tourPic,
 .tour:nth-of-type(4) .tourPic {
   order: 2;
 }
+
+
 
 
 .cloudTop{/*雲朵img*/
@@ -287,14 +288,10 @@ section:nth-child(4){
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3em;
+    gap: 3rem;
     height: 30em;
 
-    width: 25%;
-
-    
-
-
+    width: 28%;
 
 }
 
@@ -331,10 +328,9 @@ section:nth-child(4){
 
 .trafficAdress img{
     display: block;
-
-    
-
-
+    width: 18px;
+    height: auto;
+    outline: rgb(13, 13, 7) 2px solid;
 
 }
 
@@ -342,14 +338,14 @@ section:nth-child(4){
 .trafficAdress p{
     font-size: 16px;
     line-height: 30px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     
 
 }
 
 
 .trafficRight{/*右邊區塊的div*/
-    outline: 2px rgb(60, 0, 255) solid;
+    /* outline: 2px rgb(60, 0, 255) solid; */
 
 
 }
@@ -365,10 +361,12 @@ section:nth-child(4){
 
 
 .ways{/*三種交通方式框框的div*/
-    outline: 1px dashed gray;
+    /* outline: 1px dashed gray; */
     background-color: #FFF9F0;
     border-radius: 40px;
     padding: 30px;
+    box-sizing: border-box;
+
     
     width: 100%;
     max-width: 540px;
@@ -382,7 +380,7 @@ section:nth-child(4){
 
 .waysIcon{
     width: 100%;
-    max-width: 60px;
+    max-width: 48px;
 
     height: auto;
     display: block;
@@ -429,6 +427,12 @@ iframe{
     width: 100%;
     height: 400px;  
 
+}
+
+
+/* RWD430 H1 環境介紹*/
+.RWD430{
+    display: none;
 }
 
 
@@ -558,6 +562,153 @@ iframe{
         font-size: 14px;
         line-height: 1.4;
     }
+
+
+
+}
+
+
+
+
+
+
+/*--------- rwd 手機 430px -----------*/
+
+@media screen and (max-width:431px) {
+    html{
+        font-size: 12px;
+    }
+
+    section{
+        max-width: 430px;
+    }
+
+    .cloudTop,
+    .cloudBottom{
+        display: none;
+    }
+
+
+
+    /* 品牌寓意 */
+    section:nth-child(2){
+    
+    padding: 80px 5px;
+    }
+
+    .story{
+        display: block;
+    }
+
+    .storyLogo{
+        margin: 0 auto;
+        width: 100%;
+
+    }
+
+    .storyLogo img{
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto 24px;
+
+    }
+
+    .storyConetent p{
+        font-size: 14px;
+    }
+
+
+    /*---  環境介紹 ---*/
+
+
+    .tour{
+        flex-direction: column;
+        gap:0px;
+
+
+    }
+
+    .tourContent h1{
+        display: none;
+    }
+
+    .RWD430{
+        display: block;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+
+    section:nth-child(3){
+        gap:76px;
+    
+    
+    }
+
+    .tourContent{
+        padding: 0;
+        
+    }
+
+    .tourContent p,
+    .tourContent h4{
+        font-size: 14px;
+    }
+    
+
+    /* 茶水間 & 櫃台圖片放右邊 */
+    .tour:nth-of-type(2) .tourPic,
+    .tour:nth-of-type(4) .tourPic {
+        order: 0;
+    }
+
+
+
+    /*-------交通資訊-------*/
+
+    section:nth-child(4){
+        flex-direction: column;
+        margin-top: 40px;
+       
+   
+    }
+
+    .trafficLeft{
+        width: 100%;
+        gap:0;
+    }
+
+    .trafficLeft>img{
+        width: 80%;
+        margin: auto;
+    }
+
+    .trafficLeft h1{
+        margin-bottom: 0;
+    }
+
+    .trafficRight{
+        width: 100%;
+    }
+
+    .ways{
+        padding: 15px;
+        gap:20px;
+        
+
+        
+    }
+
+    .waysContent p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    iframe{
+        height: 300px;
+    }
+
+
 
 
 
