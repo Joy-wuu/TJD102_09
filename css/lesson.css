@@ -282,6 +282,10 @@ section{
     html{
         font-size: 14px;
     }
+
+    .teacherTop{
+        min-height: 320px;
+    }
     
     .lesson{
         width: 100vw;
@@ -305,6 +309,10 @@ section{
 @media screen and (max-width:431px) {
     html{
         font-size: 14px;
+    }
+
+    .teacherTop{
+        min-height: 168px;
     }
 
     .sub{
