@@ -21,6 +21,8 @@ header{
     background-position:bottom center;
     width: auto;
 
+    
+
 }
 
 .tool{
@@ -114,6 +116,7 @@ header{
 
     
 }
+
 
 /*------預約試聽---------*/
 main{
@@ -438,18 +441,25 @@ ul.footerLesson li img{
 @media screen and (max-width:431px){
 
 
+
     .top{
   
-        min-height: 230px;
+        min-height: 168px;
+        padding-top: 60px; 
         background-position: top;
-        position: relative;
-        /* overflow: visible; */
+        
     }
+
     .tool{
         background-color: #FFE9CA;
         margin: 0;
         height: 60px;
         overflow: visible;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
 
     }
 
