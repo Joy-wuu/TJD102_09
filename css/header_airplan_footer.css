@@ -135,7 +135,7 @@ a.airplan{
 
     
     position: fixed;
-    right: 30px;
+    right: 10px;
     top: 50%;
 
     z-index: 98;
@@ -523,6 +523,10 @@ ul.footerLesson li img{
         font-size: 16px;
     }
 
+
+    a.airplan img{
+        max-width: 80px;
+    }
 
 }
 

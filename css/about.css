@@ -11,7 +11,7 @@
 main{
     margin-top: 48px;
     background-image: url(../img/home/background_about.png);
-    /* background-position:center; */
+    background-position:center top;
     background-repeat: no-repeat;
 
     height: auto;
