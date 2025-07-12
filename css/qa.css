@@ -12,7 +12,7 @@
 
 
 section>h3{
-  font-size: 36px;
+  font-size: 2rem;
   text-align: center;
   font-weight: bold;
   margin: 0px auto 56px;
@@ -112,6 +112,7 @@ summary::after{
   border-right:3px gray solid;
   transform: rotate(135deg);
   margin-left: auto;
+  margin-right: 8px;
   box-sizing: border-box;
 
 
@@ -158,5 +159,90 @@ details p{
 
 }
 
+
+
+
+/*--------- rwd 平板 820px -----------*/
+@media screen and (max-width:821px) {
+  html{
+    font-size: 14px;
+  }
+
+  .teacherTop{
+    min-height: 320px;
+  }
+
+  .wrapper{
+    max-width: 820px;
+  }
+
+  details,
+  summary{
+    max-width: 750px;
+  }
+
+
+}
+
+
+
+/*--------- rwd 手機 430px -----------*/
+
+@media screen and (max-width:431px) {
+  html{
+    font-size: 12px;
+  }
+
+  .teacherTop{
+    min-height: 168px;
+  }
+
+
+
+ 
+
+  .wrapper{
+    max-width: 430px;
+  }
+
+  details,
+  summary{
+    max-width: 390px;
+    font-size: 14px;
+    letter-spacing: 1;
+    box-sizing: border-box;
+  }
+
+  summary{
+    padding: 12px 4px;
+    gap:8px;
+    border: 3px solid #D26E49;
+    
+   
+  }
+
+
+
+
+  details p{
+  font-size: 14px;
+  
+  border-left: 3px solid #D26E49;
+  border-right: 3px solid #D26E49;
+  border-bottom: 3px solid #D26E49;
+
+  padding: 12px 32px 32px 36px;
+
+  
+
+}
+
+  
+
+
+
+
+
+}
 
 
