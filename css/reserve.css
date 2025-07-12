@@ -12,7 +12,8 @@
 main{
     background-image: url("../img/home/background_reserve.png");
     background-repeat: no-repeat;
-    width: 1440px;
+    width: 100%;
+    max-width: 1200px;
     margin: 96px auto;
 
     position: relative;
@@ -21,7 +22,7 @@ main{
 
 
 h1{
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
     text-align:center;
     margin: 56px auto;
@@ -76,13 +77,13 @@ h1{
     display: block;
     margin: 12px 0 6px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .bookingForm input,
 .bookingForm textarea,
 .bookingForm select{
-    font-size: 16px;
+    font-size: 1rem;
   
 }
 
@@ -98,7 +99,7 @@ h1{
     border-radius: 6px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 
@@ -121,7 +122,7 @@ h1{
 }
 
 .bookingForm button {
-    font-size: 16px;
+    font-size: 1rem;
     width: 20%;
     padding: 10px;
     background-color: #257EC7;
@@ -144,3 +145,63 @@ h1{
 }
 
 
+
+
+/*--------- rwd 平板 820px -----------*/
+
+@media screen and (max-width:821px) {
+    html{
+        font-size: 14px;
+    }
+
+    .teacherTop{
+        min-height: 320px;
+    }
+
+    main{
+        max-width: 820px;
+        
+    }
+
+    .bookingForm{
+        max-width: 560px;
+    }
+
+
+}
+
+
+
+/*--------- rwd 手機 430px -----------*/
+
+@media screen and (max-width:431px) {
+    html{
+        font-size: 12px;
+    }
+
+    .teacherTop{
+        min-height: 168px;
+    }
+
+    main{
+        max-width: 430px;
+        background-position: center top;
+        
+    }
+
+    .bookingForm{
+        width: 80%;
+        max-width: 350px;
+    }
+
+    
+    .airplan {
+        width: 40%;
+    }
+
+    .bookingForm button {
+        width: 30%;
+    }
+
+
+}

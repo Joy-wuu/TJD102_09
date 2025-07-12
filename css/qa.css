@@ -197,10 +197,6 @@ details p{
     min-height: 168px;
   }
 
-
-
- 
-
   .wrapper{
     max-width: 430px;
   }
@@ -214,10 +210,10 @@ details p{
   }
 
   summary{
-    padding: 12px 4px;
+    padding: 12px 6px;
     gap:8px;
     border: 3px solid #D26E49;
-    
+
    
   }
 
@@ -225,17 +221,19 @@ details p{
 
 
   details p{
-  font-size: 14px;
-  
-  border-left: 3px solid #D26E49;
-  border-right: 3px solid #D26E49;
-  border-bottom: 3px solid #D26E49;
+    font-size: 14px;
+    
+    border-left: 3px solid #D26E49;
+    border-right: 3px solid #D26E49;
+    border-bottom: 3px solid #D26E49;
 
-  padding: 12px 32px 32px 36px;
-
-  
+    padding: 12px 32px 32px 34px;
 
 }
+
+  summary img{
+    width: 18px;
+  }
 
   
 

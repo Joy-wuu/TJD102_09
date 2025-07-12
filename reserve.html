@@ -5,6 +5,8 @@
     <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <title>預約課程｜浩奇補習班浩奇教育</title>
     <link rel="stylesheet" href="css/reserve.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 
@@ -16,7 +18,9 @@
             <!--LOGO及選單列-->
             <div class="tool">
                 <a href="index.html"><img src="img/home/logo_header.svg" alt=""></a>
-                <ul>
+                <i id="menuBtn" class="fa fa-bars" aria-hidden="true"></i>
+                
+                <ul id="menuList">
                     <li>
                         <a href="about.html">關於我們</a>
                     </li>
@@ -56,19 +60,19 @@
             <li>
                 <!-- 姓名 -->
                 <label for="name">學生姓名：</label>
-                <input type="text" class="name" name="name" required>
+                <input type="text" class="name" name="name" placeholder="ex: 王小明" required>
             </li>
             
             <li>
                 <!-- 目前年級 -->
                 <label for="grade">目前年級：</label>
-                <input type="text" class="grade" name="grade" required>
+                <input type="text" class="grade" name="grade" placeholder="ex: 國中一年級" required>
             </li>
 
             <li>
                 <!-- 學校名稱 -->
                 <label for="scool">學校名稱：</label>
-                <input type="text" class="scool" name="scool" required>
+                <input type="text" class="scool" name="scool" placeholder="ex: 中山國中" required>
             </li>
 
 
@@ -93,7 +97,7 @@
             <li>
                 <!-- 聯絡人姓名 -->
                 <label for="name">聯絡人姓名：</label>
-                <input type="text" class="name" name="name" required>
+                <input type="text" class="name" name="name" placeholder="ex: 王大明" required>
             </li>
 
 
@@ -111,18 +115,18 @@
             <li>
                 <!-- 聯絡手機 -->
                 <label for="phone">聯絡手機：</label>
-                <input type="tel" class="phone" name="phone" required>
+                <input type="tel" class="phone" name="phone" placeholder="09xxxxxxxx…" required>
             </li>
 
             <li>
                 <!-- 聯絡信箱 -->
                 <label for="email">聯絡信箱：</label>
-                <input type="email" class="phone" name="phone" required>
+                <input type="email" class="phone" name="phone" placeholder="ex: joy851127@gmail.com" required>
             </li>
 
             <!-- 備註 -->
             <label for="note">備註（限200字以內）：</label>
-            <textarea class="note" name="note" maxlength="200" placeholder="可填寫學生程度、希望安排時間 … "></textarea>
+            <textarea class="note" name="note" maxlength="200" placeholder="可填寫學生程度、希望安排時間… "></textarea>
 
             <!-- 送出 -->
             <button type="submit">送出預約</button>
@@ -204,6 +208,19 @@
             </ul>
         </div>
      </footer>
+
+    <script>
+        /*點擊漢堡*/
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuBtn = document.getElementById("menuBtn");
+            const menuList = document.getElementById("menuList");
+
+            menuBtn.addEventListener("click", function () {
+            menuList.classList.toggle("show");
+            });
+        });
+    </script>
+
 
 
     
