@@ -417,8 +417,9 @@ video{
     .lessonBtn{ /* ul */
         flex-wrap: wrap;
         justify-content: center;
-        gap:12px;
+        gap:8px;
         padding: 24px 0;
+        width: 100%;
 
     }
 
@@ -439,7 +440,7 @@ video{
 
     .cardTop img { /* 老師照片 */
         height: 250px;
-        left: 115px;
+        left: 95px;
     }
 
     .cardTop h1{ /* 科目 */
@@ -449,7 +450,7 @@ video{
     .cardTop h2 { /* 老師姓名 */
        font-size: 30px;
        top: 50px; 
-       left: 40px;
+       left: 30px;
        z-index: 1;
     }
 

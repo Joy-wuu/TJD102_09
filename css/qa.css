@@ -203,6 +203,7 @@ details p{
 
   details,
   summary{
+    width: 98%;
     max-width: 390px;
     font-size: 14px;
     letter-spacing: 1;
@@ -235,7 +236,9 @@ details p{
     width: 18px;
   }
 
-  
+summary::-webkit-details-marker {
+  display: none;
+}
 
 
 
