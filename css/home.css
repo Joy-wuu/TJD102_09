@@ -10,7 +10,7 @@
  /*----標語、專業課程---*/
 
 .lesson{
-    outline: 3px rgb(0, 0, 0) solid;
+    /* outline: 3px rgb(0, 0, 0) solid; */
     width:100%;
     max-width: 1200px;
     background-image: url(../img/home/background_lesson.png);
@@ -42,7 +42,7 @@
 
 
 .lesson ul{
-    outline: 3px rgb(255, 0, 0) solid;
+    /* background-color: red; */
     display: flex;
     justify-content: space-between;
     height: 420px;
@@ -56,7 +56,7 @@
 .lesson li{
     background-position: bottom;
     background-repeat: no-repeat;
-    outline: 3px rgb(68, 0, 255) solid;
+    /* outline: 3px rgb(68, 0, 255) solid; */
     height: 420px;
     flex-basis: 0;
     flex-grow: 1;
@@ -175,7 +175,7 @@
 /*-------榮譽榜單------*/
 
 .honorRoll{
-    outline: black 1px solid;
+    /* outline: black 1px solid; */
     background-image: url(../img/home/background_honor_roll1.png);
     background-repeat: no-repeat;
     background-position: center top;
@@ -217,7 +217,7 @@
 .honor h4{
     font-size: 2rem;
     font-weight:bold;
-    outline: rgb(60, 255, 0) 1px solid;
+    /* outline: rgb(60, 255, 0) 1px solid; */
     text-align: center;
     margin-bottom: 48px;
     
@@ -240,7 +240,7 @@
 }
 
 .honorPic img{
-    outline: 1px rgb(255, 149, 0) solid;
+    /* outline: 1px rgb(255, 149, 0) solid; */
     width: 120%;
     height: auto;
 
@@ -351,7 +351,7 @@
     margin-top: 20px;
     margin-right: 100px;
 
-    outline: blue solid 1px;
+    /* outline: blue solid 1px; */
 
 }
 
@@ -396,7 +396,7 @@
     align-items: center;
     gap: 48px;   
 
-    outline: 1px black solid;
+    /* outline: 1px black solid; */
 }
 
 
@@ -432,7 +432,7 @@
 }
 
 .environmentDesk img{
-    outline: 1px black solid;
+    /* outline: 1px black solid; */
     width: 80px;
     height: auto;
 
@@ -452,7 +452,7 @@
 
 
 .environmentContent>img{
-    outline: 1px black solid;
+    /* outline: 1px black solid; */
     width: 100%;
     height: auto;
 
@@ -468,7 +468,7 @@
 }
 
 
-.environmentContent a{
+.environment a{
     text-decoration: none;
     color: #D26E49;
     display: block;
@@ -479,16 +479,18 @@
     font-size: 18px;
     font-weight: bold;
     border-radius: 30px;
-    letter-spacing: 32x;
+    letter-spacing: 32px;
 }
 
 
-.environmentContent a:hover{
+.environment a:hover{
     background-color: #D26E49;
     color: white;
     outline: 3px solid white;
     text-decoration:underline;
 }
+
+
 
 
 
@@ -635,8 +637,13 @@ iframe{
         margin-right: 10px;
     }
 
+    .honorTitle h4{
+        font-size: 2rem;
+        
+    }
+
     .honorTitle p{
-        flex: 14px;
+        font-size: 14px;
     }
 
 
@@ -656,11 +663,11 @@ iframe{
 
     .environmentContent{
         max-width: 246px;
-        outline: 1px black solid;
+        /* outline: 1px black solid; */
     }
 
     .environmentDesk img{
-    outline: 1px black solid;
+    /* outline: 1px black solid; */
     width: 70px;
     height: auto;
     flex-grow: 1;
@@ -699,13 +706,262 @@ iframe{
 /*--------- rwd 手機 430px -----------*/
 
 @media screen and (max-width:431px) {
+    html{
+        font-size: 12px;
+    }
+    
     .homeTop{
         min-height: 168px;
     }
 
+    .lesson{
+        max-width: 430px;
+        
+
+    }
+
+    .lesson>p {
+        padding-top: 56px;
+    }
+
+    .lesson h3{
+        margin-top: 56px;
+    }
+
+    .lesson ul{
+        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        
 
 
+    }
+
+    .lesson li{
+        padding: 20px;
+        flex-basis: 200px;
+        width: 95%;
+        background-position: 0px -172px;
+    }
+
+    .lesson li p{
+        max-width: 155px;
+        font-size: 14px;
+    }
+
+    .lesson li h4{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    
 
 
+    /*--- 榮譽榜單 ---*/
+    .honorRoll{
+        max-width: 430px;
+        background-image: none;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    
+
+    .honor{/*兩區榮譽榜 區塊名稱共用*/
+        max-width:390px;
+        margin-top: 24px;
+        
+        order: 1;
+        height: auto;
+        /* background-color: #FFF9F0;
+        border-radius: 20px;
+        margin: 0;
+        padding: 20px; */
+        /* box-sizing: border-box; */
+    }
+
+    .content{
+        background-color: #FFF9F0;
+        border-radius: 20px 20px 0 0 ;
+        margin: 0;
+        padding-top: 20px;
+        box-sizing: border-box;
+  
+    }
+
+
+    ul.contentButton{
+        background-color: #FFF9F0;
+        margin-top: 0;
+        padding-bottom: 20px;
+        border-radius: 0 0 20px 20px;
+
+    }
+
+    .content li p {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+
+    .sliderBoard{
+        height: auto;
+    }
+
+    .honor h4 {
+        margin-bottom: 24px;
+    }
+
+    .honor:last-child{
+        max-width: 390px;
+    }
+
+    .honorContext{
+        flex-direction: column;
+        gap:0;
+    }
+    .honorPic{
+        align-self: center;
+
+    }
+
+    .honorPic img{
+        width: 100%;
+    }
+    
+
+    .honorTitle{
+        order: 0;
+        margin: 0 auto;
+        background-color: #FFE9CA;
+        width: 100%;
+        padding: 50px 0;
+        margin-top: 48px;
+        
+    }
+
+    .honorTitle h3{
+        width:200px;
+    }
+
+    
+    .honorTitle img{
+        margin: 0 auto;
+    
+    }
+
+
+    .honorTitle p{
+        font-size:14px;
+    }
+
+    .content p{
+        font-size:14px;
+
+    }
+
+
+    /*--- 環境介紹 ---*/
+    .environment{
+        width: 95%;
+        max-width: 430px;
+        height: auto;
+        flex-direction: column;
+        background-image: none;
+        background-color: #D26E49;
+        border-radius: 40px;
+
+        margin-top: 56px;
+        
+    
+        
+    }
+
+
+    .environmentContent{
+        margin-top: 24px;
+        width: 95%;
+        max-width: 400px;
+        justify-content: start;
+        height: auto;
+        gap: 12px;
+        
+
+    }
+
+    .environmentDesk img{
+        width: 50px;
+       
+    }
+
+    .environmentDesk h3{
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .environmentContent>img {
+        display: none;
+    }
+
+    .environmentContent p{
+        font-size: 14px;
+    }
+
+    .environment a{
+        letter-spacing: 2px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        width: 65%;
+
+    }
+   
+
+
+    .environmentText h4{
+        font-size: 20px;
+        padding:5px 20px;
+    }
+
+
+    .environmentText p{
+        font-size: 14px;
+        padding:6px 10px 6px 20px;
+        width: 85%;
+        box-sizing: border-box;
+        
+        
+      
+
+       
+    }
+
+
+    .environmentPic{
+        width: 100%;
+        flex-grow: 0;
+        height: 300px;
+        margin-bottom: 20px;
+      
+    }
+
+    .map{
+        height: 400px;
+    }
+
+    iframe{
+        height: 300px;
+    }
+
+
+   
 
 }
+
+
+
+
+
+
