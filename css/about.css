@@ -330,7 +330,7 @@ section:nth-child(4){
     display: block;
     width: 18px;
     height: auto;
-    outline: rgb(13, 13, 7) 2px solid;
+    /* outline: rgb(13, 13, 7) 2px solid; */
 
 }
 

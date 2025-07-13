@@ -127,6 +127,7 @@ section>h3{
 
 .newsContent img{
     /* outline: 1px rgb(0, 0, 0) solid; */
+    width: 100%;
     max-width: 30px;
     height: auto;
     transition: 0.5s;
@@ -381,19 +382,34 @@ section:nth-child(3){
     .news{
         width: 90%;
         height: 200px;
+        max-width: 400px;
+        g
+
+        outline: 2px solid red;
         
     }
 
     .newsContent img{
-        display: block;
-        width: 20px;
+        display: none;
+        width: 5%;
+        max-width: 10px;
         left: -20px;
         top: 11px;
+        
     }
 
     .newsContent {
-        
-        max-width: 170px;
+        width: 45%;
+        max-width: 180px;
+
+        /* outline: 2px solid red; */
+
+    }
+    .news img{
+        width: 50%;
+        max-width: 200px;
+        /* outline: 2px solid red; */
+
     }
 
     .newsContent p{

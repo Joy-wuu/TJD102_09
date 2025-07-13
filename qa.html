@@ -218,6 +218,18 @@
             menuList.classList.toggle("show");
             });
         });
+
+        /* 點擊 p 標籤收合 details */
+        const detailsList = document.querySelectorAll("details");
+
+        detailsList.forEach(function(detail) {
+            const p = detail.querySelector("p");
+            if (p) {
+            p.addEventListener("click", function() {
+                detail.removeAttribute("open"); // 關閉這個 details
+            });
+            }
+        });
     </script>
 
     
