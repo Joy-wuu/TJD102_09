@@ -406,29 +406,42 @@
 
 
     function showTeacher(key) {
-      const t = teachers[key];
-      document.getElementById("tName").textContent = t.name;
-      document.getElementById("tName").style.color = t.nameColor;
-      document.getElementById("tPhoto").src = t.photo;
-      document.getElementById("tMotto").innerHTML = t.motto;
-      document.getElementById("tMotto").style.color = t.mottoColor;
-      document.getElementById("tEng").textContent = t.eng;
-      document.getElementById("tEng").style.color = t.engColor;
-      document.querySelector(".cardBackgrond").style.backgroundColor = t.bgColor;
-      document.getElementById("tSchool").textContent = t.school;
-      document.getElementById("tExp").textContent = t.exp;
-      document.getElementById("tCareer").innerHTML = t.career;
-      document.getElementById("tKey").textContent = t.keywords;
-      document.getElementById("tVideo").querySelector("source").src = t.video;
-      document.getElementById("tVideo").load();
+  const t = teachers[key];
+  document.getElementById("tName").textContent = t.name;
+  document.getElementById("tName").style.color = t.nameColor;
+  document.getElementById("tPhoto").src = t.photo;
+  document.getElementById("tMotto").innerHTML = t.motto;
+  document.getElementById("tMotto").style.color = t.mottoColor;
+  document.getElementById("tEng").textContent = t.eng;
+  document.getElementById("tEng").style.color = t.engColor;
+  document.querySelector(".cardBackgrond").style.backgroundColor = t.bgColor;
+  document.getElementById("tSchool").textContent = t.school;
+  document.getElementById("tExp").textContent = t.exp;
+  document.getElementById("tCareer").innerHTML = t.career;
+  document.getElementById("tKey").textContent = t.keywords;
+  document.getElementById("tVideo").querySelector("source").src = t.video;
+  document.getElementById("tVideo").load();
+}
+
+// 新增：取得網址上的 subject 參數
+function getSubjectFromURL() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get("subject");
+}
+
+window.onload = function () {
+  const subject = getSubjectFromURL();
+  if (subject && teachers[subject]) {
+    showTeacher(subject);
+    
+    // ✅ 若想跳轉到老師卡片位置，取消下面註解即可
+    // document.querySelector(".cardBackgrond").scrollIntoView({ behavior: "smooth" });
+  } else {
+    showTeacher("chinese");
+  }
+};
 
 
-      
-    }
-
-    window.onload = function() {
-      showTeacher('chinese');
-    };
 
 
 
