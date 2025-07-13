@@ -420,6 +420,9 @@ video{
         gap:8px;
         padding: 24px 0;
         width: 100%;
+        
+
+        /* outline: 1px red solid; */
 
     }
 

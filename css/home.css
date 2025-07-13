@@ -744,7 +744,8 @@ iframe{
         padding: 20px;
         flex-basis: 200px;
         width: 95%;
-        background-position: -40px bottom;
+    
+        background-position: -40px -160px;
     }
 
     .lesson li p{
